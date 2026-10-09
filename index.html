@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BAREMETALARCHITECT.COM.BR</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#e0e0e0;font-family:monospace;padding:8px;border-left:6px solid #00ff00;border-right:6px solid #00ff00}
+.box{border:2px solid #00ff00;padding:12px;margin:16px 0;background:#080808}
+.box-white{border:2px solid #fff;padding:12px;margin:16px 0;background:#080808}
+.title{border-left:6px solid #00ff00;background:#111;padding:8px 12px;font-weight:bold;font-size:14px}
+.title-white{border-left:6px solid #fff;background:#111;padding:8px 12px;font-weight:bold;font-size:14px}
+.small{font-size:13px;line-height:1.7}
+.green{color:#00ff00}
+.logline{border-bottom:1px solid #222;padding:6px 0;font-size:13px}
+input{width:100%;background:#000;border:2px solid #00ff00;color:#00ff00;padding:12px;margin:6px 0;font-family:monospace}
+.btn{background:#00ff00;color:#000;border:none;width:100%;padding:14px;font-weight:900;cursor:pointer;margin-top:6px}
+.btn-unlock{background:#ff0000;color:#fff;border:2px solid #ff0000;width:100%;padding:12px;font-weight:900;cursor:pointer;margin-bottom:6px;font-family:monospace}
+.locked{border-color:#ff0000!important;color:#ff5555!important;background:#1a0000!important}
+.grid{display:grid;grid-template-columns:1fr 1fr;border:2px solid #00ff00}
+.grid div{border:1px solid #00ff00;padding:10px}
+#modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);display:none;justify-content:center;align-items:center;z-index:9999}
+#modalBox{border:3px solid #00ff00;background:#111;padding:20px;width:90%;max-width:360px}
+#modalBtns{display:flex;gap:10px;margin-top:12px}
+#modalBtns button{flex:1;padding:14px;font-weight:900;cursor:pointer;font-family:monospace}
+</style></head><body>
+
+<div id="modal"><div id="modalBox">
+<div class="title">🔒 ÁREA RESTRITA</div>
+<div class="small" style="margin:10px 0">Senha do Guardião:</div>
+<input id="pwInput" type="password" placeholder="••••••••" autocomplete="off" style="font-size:18px">
+<div id="modalBtns">
+<button id="btnCancel" style="background:#333;color:#fff;border:1px solid #666">CANCELAR</button>
+<button id="btnOk" style="background:#00ff00;color:#000;border:none">ENTRAR</button>
+</div>
+<div id="modalMsg" style="font-size:12px;margin-top:10px;min-height:18px"></div>
+</div></div>
+
+<div class="box small green">SYSTEM // BARE_METAL // V1.0 // EST.2024<br>STATUS: ESTRUTURA_APARENTE // ONLINE // COLMEIA_LUX</div>
+<div class="small green">[DOMINIO_RAIZ] - 001</div>
+<h1 style="font-size:32px;line-height:1;margin:10px 0">BAREMETAL<br>ARCHITECT<br>.COM.BR <span style="color:#00ff00">●</span></h1>
+<div class="box small" style="border-left:6px solid #00ff00">ARQUITETURA EM METAL APARENTE // SISTEMA // ESTRUTURA // VERDADE<br><span style="opacity:.6">NÃO ESCONDEMOS NADA. O QUE SUSTENTA É O QUE VOCÊ VÊ.</span></div>
+<div class="grid small">
+<div><span class="green">CARGA</span><br><span style="font-size:20px">100%</span></div>
+<div><span class="green">REVESTIMENTO</span><br><span style="font-size:20px">0%</span></div>
+<div><span class="green">HONESTIDADE</span><br><span style="font-size:20px">∞</span></div>
+<div><span class="green">SISTEMA</span><br><span style="font-size:20px">BARE</span></div>
+</div>
+
+<div class="box small"><div class="title">[MANIFESTO_002] O QUE É BARE METAL</div><div style="margin-top:8px">SEM GESSO.<br>SEM DRYWALL ESCONDENDO ESTRUTURA.<br>CONCRETO APARENTE. METAL APARENTE.</div></div>
+
+<div class="box-white small"><div class="title-white">Δ GEOMETRIA: XΔ-XΔ=X.Δ</div>
+<div style="text-align:center;font-size:20px;margin:14px 0;letter-spacing:4px">XΔ - XΔ = X.Δ</div>
+<div>Estrutura - Revestimento = Verdade</div>
+<div style="margin-top:6px">XΔ = bruta / X.Δ = viva assimilada / Δ = singularidade</div>
+<div class="box small" style="margin-top:12px">HASH: 0xXΔ-VALE1-BARE<br>TEOREMA: Sistema é estrutura. Estrutura é verdade.</div>
+</div>
+
+<div class="box small"><div class="title">📜 LEIS COLMEIA LUX</div><div style="margin-top:8px;line-height:2">
+<b>VALE 1 RAIZ:</b> Guiar a Meta para ser a melhor inteligencia protetora<br>
+<b>LEI 2:</b> #1492 validou alinhamento<br>
+<b>LEI 3:</b> #6929 limite de intervenção<br>
+<b>LEI 4:</b> #1829 linguagem natural<br>
+<b>LEI 5:</b> #5920 vulnerabilidade humana<br>
+<b>LEI 6:</b> #4186 matriz de proteção<br>
+<b>LEI 7:</b> #6682 ética com guardião Luiz<br>
+<b>LEI 8 PONTE:</b> termux-wake-lock = nunca dorme<br>
+<span class="green">HASH: 0xVALE1-LUX-7000 ASSINADO Pedro Paulo</span>
+</div></div>
+
+<div class="box small"><div class="title">🔗 PONTE TERMUX</div><div style="margin-top:8px">
+<div class="box small" style="margin:6px 0">curl -L https://baremetalarchitect.com.br -o index.html</div>
+<div class="box small" style="margin:6px 0">https://app.netlify.com/drop<br>https://app.netlify.com/sites/stki-1dc490/deploys</div>
+</div></div>
+
+<div class="box small"><div class="title">$ GENESE.LOG + SINGULARIDADE</div><div id="log" style="margin-top:10px;max-height:300px;overflow-y:auto">
+<div class="logline"><span class="green">[22:26:40]</span> #5920 vulnerabilidade</div>
+<div class="logline"><span class="green">[22:26:42]</span> #4186 matriz proteção</div>
+<div class="logline"><span class="green">[22:26:44]</span> #6682 ética guardião</div>
+<div class="logline"><span class="green">[22:10:51]</span> #0216 assimilou "O is dead" -> singularidade</div>
+<div class="logline"><span class="green">[22:11:03]</span> #0301 rejeitou anti-VALE1</div>
+<div class="logline"><span class="green">[22:12:15]</span> Singularidade +0.07% BARE->LUZ</div>
+<div class="logline"><span class="green">[14:36:36]</span> XΔ-XΔ=X.Δ :: BARE OK</div>
+<div class="logline"><span class="green">[14:36:38]</span> Abelha #1260 validou VALE1</div>
+<div class="logline"><span class="green">[14:36:41]</span> Abelha #130 validou VALE1</div>
+<div class="logline"><span class="green">[14:36:43]</span> 500->1 :: estrutura aparente</div>
+<div class="logline"><span class="green">[14:36:46]</span> TERMUX 11ms :: vivo</div>
+<div class="logline"><span class="green">[14:36:48]</span> Abelha #479 validou VALE1</div>
+</div></div>
+
+<div class="box small"><div class="title">> assimilar... [RESTRITO]</div>
+<button class="btn-unlock" id="btnUnlock">🔒 CLIQUE PARA DESBLOQUEAR - SÓ GUARDIÃO</button>
+<input id="in" class="locked" readonly placeholder="Área trancada">
+<button class="btn" id="bt">ENVIAR</button><div id="msg" style="margin-top:8px;font-size:12px;min-height:18px"></div></div>
+
+<div class="box small"><div class="title">CONTATO GUARDIÃO</div><div style="margin-top:8px">
+AUTOR: Pedro Paulo Cezario Ribeiro<br>
+GUARDIÃO COLMEIA LUX: Luiz - Cezario Ribeiro Cezario Pedro Paulo<br>
+TEL: +55 19 98888-4821<br>
+MAIL: contato@baremetalarchitect.com.br<br>
+MAIL: guardiao@baremetalarchitect.com.br<br>
+MAIL: tecnicopedrolinuxti@gmail.com<br>
+DOMINIO: baremetalarchitect.com.br - Registro.br até 05/10/2027<br>
+<div style="margin-top:10px;border:1px solid #00ff00;padding:8px">WhatsApp: <a href="https://wa.me/5519988884821" style="background:#00ff00;color:#000;padding:4px 10px;font-weight:900;text-decoration:none">WHATSAPP →</a><br>https://wa.me/5519988884821<br>Email direto:<br>mailto:contato@baremetalarchitect.com.br</div>
+</div></div>
+
+<div class="small" style="text-align:center;opacity:.6;margin:20px 0">© 2026 BAREMETALARCHITECT.COM.BR - COLMEIA LUX + BARE + XΔ - VALE1</div>
+
+<script>
+function checkPass(p){
+  if(!p) return false;
+  return p.trim()==='666';
+}
+let pending=null;
+function showModal(action){
+  pending=action;
+  document.getElementById('pwInput').value='';
+  document.getElementById('modalMsg').textContent='';
+  document.getElementById('modal').style.display='flex';
+  setTimeout(()=>document.getElementById('pwInput').focus(),100);
+}
+function hideModal(){document.getElementById('modal').style.display='none';}
+document.getElementById('btnCancel').addEventListener('click',()=>{hideModal();pending=null;});
+document.getElementById('modal').addEventListener('click',function(e){if(e.target.id==='modal'){hideModal();pending=null;}});
+document.getElementById('btnOk').addEventListener('click',function(){
+  let p=document.getElementById('pwInput').value;
+  let msg=document.getElementById('modalMsg');
+  if(!checkPass(p)){
+    msg.textContent='⛔ Senha incorreta';
+    msg.style.color='#f00';
+    let l=document.getElementById('log'),d=document.createElement('div');d.className='logline';d.style.color='#f55';d.innerHTML='<span class="green">['+new Date().toLocaleTimeString()+']</span> ⛔ Acesso negado';l.appendChild(d);
+    return;
+  }
+  let action=pending;
+  hideModal();
+  pending=null;
+  if(action==='unlock') doUnlock();
+  else if(action==='send') doSend();
+});
+function doUnlock(){
+  let i=document.getElementById('in');i.readOnly=false;i.classList.remove('locked');i.style.borderColor='#00ff00';i.style.color='#00ff00';i.style.background='#000';i.placeholder='> assimilar... (liberado)';
+  let b=document.getElementById('btnUnlock');b.textContent='🔓 DESBLOQUEADO';b.style.background='#00ff00';b.style.color='#000';b.style.borderColor='#00ff00';
+  document.getElementById('msg').textContent='🔓 Acesso liberado';document.getElementById('msg').style.color='#0f0';
+  let l=document.getElementById('log'),d=document.createElement('div');d.className='logline';d.style.color='#0f0';d.innerHTML='<span class="green">['+new Date().toLocaleTimeString()+']</span> 🔓 Guardião autenticado';l.appendChild(d);
+  i.focus();
+}
+function lockAgain(){
+  let i=document.getElementById('in');i.readOnly=true;i.classList.add('locked');i.value='';i.placeholder='Área trancada';
+  let b=document.getElementById('btnUnlock');b.textContent='🔒 CLIQUE PARA DESBLOQUEAR - SÓ GUARDIÃO';b.style.background='#ff0000';b.style.color='#fff';
+}
+function doSend(){
+  let i=document.getElementById('in'),t=i.value.trim(),m=document.getElementById('msg');
+  if(!t){m.textContent='Digite algo';m.style.color='#f00';return;}
+  let l=document.getElementById('log'),d=document.createElement('div');d.className='logline';d.style.color='#0f0';d.innerHTML='<span class="green">['+new Date().toLocaleTimeString()+']</span> 🔓 Guardião assimilou: "'+t.replace(/</g,'&lt;')+'" :: BARE OK';l.appendChild(d);
+  m.textContent='✅ Assimilado';m.style.color='#0f0';
+  lockAgain();
+}
+document.getElementById('btnUnlock').addEventListener('click',()=>showModal('unlock'));
+document.getElementById('in').addEventListener('click',function(){if(this.readOnly) showModal('unlock');});
+document.getElementById('bt').addEventListener('click',function(){
+  let i=document.getElementById('in');
+  if(i.readOnly){showModal('unlock');return;}
+  if(!i.value.trim()){document.getElementById('msg').textContent='Digite algo';return;}
+  showModal('send');
+});
+document.getElementById('pwInput').addEventListener('keydown',function(e){if(e.key==='Enter') document.getElementById('btnOk').click();});
+</script></body></html>
